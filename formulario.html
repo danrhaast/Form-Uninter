@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Pizzaria</h1>
+        <nav>
+            <a href="formulario.html">Formulário</a>
+            <a href="tabela.html">Tabelas</a>
+            <a href="pizzas.html">Pizzas</a>
+            <a href="sobrenos.html">Sobre Nós</a>
+         </nav>
+    </header>
+
+    <form method="POST" action="teste.jsp">
+        
+        <h1>Pedido de Pizza</h1>
+        <div class="input">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome">
+        </div>
+
+        <div class="input">
+            <label for="email">Email:</label>
+            <input type="text" name="email">
+        </div>
+
+        <div class="input">
+            <label for="data">Data de Entrega:</label>
+            <input type="date" name="data">
+        </div>
+
+        <div class="input">
+            <label for="tamanho">Tamanho:</label>
+            Extra Grande<input type="radio" name="tamanho" value="GG">
+            Grande<input type="radio" name="tamanho" value="G">
+            Médio<input type="radio" name="tamanho" value="M">
+            Pequeno<input type="radio" name="tamanho" value="P">
+        </div>        
+
+        <div class="input">
+            <label for="sabor">Sabores:</label>
+            <select name="sabor" id="sabor">
+                <option>Calabresa</option>
+                <option>Napolitana</option>
+                <option>4 Queijos</option>
+                <option>Strogonoff</option>
+            </select><br>
+        </div>
+
+        <div class="input">
+            <label for="adicionais">Adicionais:</label>
+            Borda<input type="checkbox" name="adicionais" value="sim">
+            Catupiry<input type="checkbox" name="adicionais" value="sim">
+            Coca-cola 600ml<input type="checkbox" name="adicionais" value="sim">
+        </div>
+
+        <div class="input">
+            <label for="comentario">Comentário</label>
+            <textarea name="comentario" rows="7" cols="30"></textarea>
+        </div>
+
+        <div class="input">
+            <input type="Submit">
+        </div>
+        
+    </form>
+</body>
+</html>
